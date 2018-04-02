@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+ <div id="wrapper">
+  <h1>Erebbit Surveillance System</h1>
+  
+  <table id="keywords" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th><span>Variables</span></th>
+        <th><span>Values</span></th>
+        <th><span>Time diff</span></th>
+        <th><span>Live</span></th>
+        <th><span>Status</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="lalign">Total Users</td>
+        <td>{{total_posts}}</td>
+        <td>0.0</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+      <tr>
+        <td class="lalign">Total Posts</td>
+        <td>{{total_comments}}</td>
+        <td>0.0</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+      <tr>
+        <td class="lalign">Total Comments</td>
+        <td>{{total_users}}</td>
+        <td>0.0</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+      <tr>
+        <td class="lalign">Recent Posts</td>
+        <td>{{recent_posts}}</td>
+        <td>24 hours</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+      <tr>
+        <td class="lalign">Recent Comments</td>
+        <td>{{recent_comments}}</td>
+        <td>24 hours</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+      <tr>
+        <td class="lalign">Recent Users</td>
+        <td>{{recent_users}}</td>
+        <td>24 hours</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+      <tr>
+        <td class="lalign">Sessions</td>
+        <td>{{visitors}}</td>
+        <td>0.0</td>
+        <td>Yes</td>
+        <td>OK</td>
+      </tr>
+    </tbody>
+  </table>
+ </div> 
+</body>
